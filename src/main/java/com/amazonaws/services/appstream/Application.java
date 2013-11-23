@@ -67,8 +67,8 @@ public interface Application extends ResourceInfo {
     String getId();
     String getName();
     String getDescription();
-    String getInstallS3Bucket();
-    String getInstallParams();
+    String getInstallerUrl();
+    String getInstallerParameters();
     String getLaunchCommand();
     int getApplicationErrorCount();
     int getActiveSessions();

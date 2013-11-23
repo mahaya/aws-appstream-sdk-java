@@ -24,8 +24,8 @@ public class CreateApplicationInput {
 
     private String name;
     private String description;
-    private String installS3Bucket;
-    private String installCommand;
+    private String installerUrl;
+    private String installerParameters;
     private String launchCommand;
 
 
@@ -37,12 +37,12 @@ public class CreateApplicationInput {
     }
 
 
-    public CreateApplicationInput(String name, String description, String installS3Bucket,
-                                  String installCommand, String launchCommand) {
+    public CreateApplicationInput(String name, String description, String installerUrl,
+                                  String installerParameters, String launchCommand) {
         this.name = name;
         this.description = description;
-        this.installS3Bucket = installS3Bucket;
-        this.installCommand = installCommand;
+        this.installerUrl = installerUrl;
+        this.installerParameters = installerParameters;
         this.launchCommand = launchCommand;
     }
 
@@ -71,23 +71,23 @@ public class CreateApplicationInput {
     }
 
 
-    public String getInstallS3Bucket() {
-        return installS3Bucket;
+    public String getInstallerUrl() {
+        return installerUrl;
     }
 
 
-    public void setInstallS3Bucket(String installS3Bucket) {
-        this.installS3Bucket = installS3Bucket;
+    public void setInstallerUrl(String installerUrl) {
+        this.installerUrl = installerUrl;
     }
 
 
-    public String getInstallCommand() {
-        return installCommand;
+    public String getInstallerParameters() {
+        return installerParameters;
     }
 
 
-    public void setInstallCommand(String installCommand) {
-        this.installCommand = installCommand;
+    public void setInstallerParameters(String installerParameters) {
+        this.installerParameters = installerParameters;
     }
 
 

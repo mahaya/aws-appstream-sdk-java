@@ -1,1 +1,2 @@
+Amazon AppStream SDK for Java.
 Copyright 2013 Amazon.com, Inc. or its affiliates. All Rights Reserved.
